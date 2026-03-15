@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* ─── Google Official Colors ─── */
+  --g-blue: #4285F4;
+  --g-red: #EA4335;
+  --g-yellow: #FBBC05;
+  --g-green: #34A853;
+
+  /* ─── Dark Theme ─── */
+  --bg-dark: #050b1a;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(20px);
+  --shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.3);
+
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Moving Mesh Gradient Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(66, 133, 244, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(52, 168, 83, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(251, 188, 5, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 10% 90%, rgba(234, 67, 53, 0.15) 0%, transparent 40%);
+  z-index: -1;
+  animation: mesh-move 20s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-move {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(2deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 28px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: var(--transition-smooth);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradient-flow 5s linear infinite;
+}
+
+@keyframes gradient-flow {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Google-style Divider */
+.google-divider {
+  height: 4px;
+  width: 80px;
+  margin: 0 auto 40px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--g-blue), var(--g-red), var(--g-yellow), var(--g-green));
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
