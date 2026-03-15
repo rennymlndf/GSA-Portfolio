@@ -28,6 +28,40 @@ const Navbar = () => {
   );
 };
 
+const GeminiHighlight = () => (
+  <section id="gemini-highlight" className="section-container gemini-highlight-section">
+    <div className="gemini-container glass">
+      <div className="gemini-badge">
+        <span className="gemini-icon">✦</span> AI-Assisted Design
+      </div>
+      <h2 className="section-title">Crafted with <span className="text-gradient">Google Gemini</span></h2>
+      <p className="gemini-subtitle">
+        Portofolio ini merupakan hasil kolaborasi antara kreativitas manusia dan kecerdasan buatan. 
+        Setiap elemen desain, struktur kode, dan optimasi konten dikembangkan dengan bantuan 
+        <strong> Google Gemini</strong> untuk menciptakan pengalaman digital yang premium dan inovatif.
+      </p>
+      
+      <div className="gemini-features">
+        <div className="gemini-feature-card">
+          <div className="feature-icon">🎨</div>
+          <h3>Modern Aesthetics</h3>
+          <p>Iterasi desain visual yang cepat dengan panduan tren desain terbaru dari AI.</p>
+        </div>
+        <div className="gemini-feature-card">
+          <div className="feature-icon">⚡</div>
+          <h3>Smart Workflow</h3>
+          <p>Efisiensi pengembangan menggunakan AI untuk debugging dan struktur komponen.</p>
+        </div>
+        <div className="gemini-feature-card">
+          <div className="feature-icon">🚀</div>
+          <h3>Future Ready</h3>
+          <p>Mengintegrasikan teknologi masa depan untuk solusi web yang lebih cerdas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const Hero = () => (
   <section id="hero" className="hero-section section-container">
     <div className="hero-content">
@@ -348,6 +382,7 @@ const App = () => {
     <div className="app-wrapper">
       <Navbar />
       <main>
+        <GeminiHighlight />
         <Hero />
         <About />
         <Experience />
