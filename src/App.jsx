@@ -383,8 +383,8 @@ const App = () => {
     <div className="app-wrapper">
       <Navbar />
       <main>
-        <GeminiHighlight />
         <Hero />
+        <GeminiHighlight />
         <About />
         <Experience />
         <Education />
