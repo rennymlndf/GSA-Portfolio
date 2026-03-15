@@ -32,30 +32,31 @@ const GeminiHighlight = () => (
   <section id="gemini-highlight" className="section-container gemini-highlight-section">
     <div className="gemini-container glass">
       <div className="gemini-badge">
-        <span className="gemini-icon">✦</span> AI-Assisted Design
+        <span className="gemini-icon">✦</span> AI as Co-pilot, Me as Pilot
       </div>
-      <h2 className="section-title">Crafted with <span className="text-gradient">Google Gemini</span></h2>
+      <h2 className="section-title">Human-Driven, <span className="text-gradient">AI-Assisted</span></h2>
       <p className="gemini-subtitle">
-        Portofolio ini merupakan hasil kolaborasi antara kreativitas manusia dan kecerdasan buatan. 
-        Setiap elemen desain, struktur kode, dan optimasi konten dikembangkan dengan bantuan 
-        <strong> Google Gemini</strong> untuk menciptakan pengalaman digital yang premium dan inovatif.
+        Portofolio ini adalah bukti sinergi antara visi kreatif saya dan kekuatan teknologi. 
+        Setiap ide orisinal, struktur utama, dan keputusan desain tetap sepenuhnya berada di tangan saya, 
+        sementara <strong>Google Gemini</strong> berperan sebagai asisten cerdas yang membantu 
+        mempercepat iterasi teknis dan mengoptimalkan detail eksekusi.
       </p>
       
       <div className="gemini-features">
         <div className="gemini-feature-card">
-          <div className="feature-icon">🎨</div>
-          <h3>Modern Aesthetics</h3>
-          <p>Iterasi desain visual yang cepat dengan panduan tren desain terbaru dari AI.</p>
+          <div className="feature-icon">💡</div>
+          <h3>Human Vision First</h3>
+          <p>AI membantu mewujudkan konsep, namun ide dasar dan arah kreatif murni dari pemikiran saya.</p>
         </div>
         <div className="gemini-feature-card">
-          <div className="feature-icon">⚡</div>
-          <h3>Smart Workflow</h3>
-          <p>Efisiensi pengembangan menggunakan AI untuk debugging dan struktur komponen.</p>
+          <div className="feature-icon">🛠️</div>
+          <h3>Enhanced Execution</h3>
+          <p>Menggunakan AI untuk mempercepat proses koding tanpa mengorbankan kontrol atas kualitas.</p>
         </div>
         <div className="gemini-feature-card">
-          <div className="feature-icon">🚀</div>
-          <h3>Future Ready</h3>
-          <p>Mengintegrasikan teknologi masa depan untuk solusi web yang lebih cerdas.</p>
+          <div className="feature-icon">🤝</div>
+          <h3>Smart Collaboration</h3>
+          <p>Membuktikan bahwa AI bukanlah pengganti, melainkan mitra untuk inovasi yang lebih besar.</p>
         </div>
       </div>
     </div>
