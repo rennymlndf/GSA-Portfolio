@@ -36,12 +36,12 @@ const GeminiHighlight = () => (
       </div>
       <h2 className="section-title">Human-Driven, <span className="text-gradient">AI-Assisted</span></h2>
       <p className="gemini-subtitle">
-        Portofolio ini adalah bukti sinergi antara visi kreatif saya dan kekuatan teknologi. 
-        Setiap ide orisinal, struktur utama, dan keputusan desain tetap sepenuhnya berada di tangan saya, 
-        sementara <strong>Google Gemini</strong> berperan sebagai asisten cerdas yang membantu 
+        Portofolio ini adalah bukti sinergi antara visi kreatif saya dan kekuatan teknologi.
+        Setiap ide orisinal, struktur utama, dan keputusan desain tetap sepenuhnya berada di tangan saya,
+        sementara <strong>Google Gemini</strong> berperan sebagai asisten cerdas yang membantu
         mempercepat iterasi teknis dan mengoptimalkan detail eksekusi.
       </p>
-      
+
       <div className="gemini-features">
         <div className="gemini-feature-card">
           <div className="feature-icon">💡</div>
@@ -71,9 +71,6 @@ const Hero = () => (
         Halo, saya{' '}
         <span className="text-gradient">Renny Melanda<br />Febriyanti</span>.
       </h1>
-      <p className="hero-subtitle">
-        Sinergi kreativitas manusia dan bantuan cerdas AI untuk membangun masa depan teknologi.
-      </p>
       <div className="hero-tags">
         <span className="tag-item">✦ AI Explorer</span>
         <span className="tag-item">✦ Fullstack Developer</span>
