@@ -72,14 +72,14 @@ const Hero = () => (
         <span className="text-gradient">Renny Melanda<br />Febriyanti</span>.
       </h1>
       <p className="hero-subtitle">
-        Building the future through code and intelligent systems. Focused on developing 
-        innovative AI solutions and high-performance web applications with a passion for 
-        problem solving.
+        Membangun masa depan melalui kode dan sistem cerdas. Berfokus pada pengembangan 
+        solusi AI inovatif dan aplikasi web berperforma tinggi dengan semangat 
+        pemecahan masalah.
       </p>
       <div className="hero-tags">
-        <span className="tag-item">✦ AI Explorer</span>
-        <span className="tag-item">✦ Fullstack Dev</span>
-        <span className="tag-item">✦ GSA 2026</span>
+        <span className="tag-item">✦ Penjelajah AI</span>
+        <span className="tag-item">✦ Developer Fullstack</span>
+        <span className="tag-item">✦ Kandidat GSA 2026</span>
       </div>
       <div className="hero-info glass">
         <span>📍 Barito Kuala, Kalsel</span>
